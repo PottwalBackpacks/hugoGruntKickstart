@@ -3,8 +3,8 @@ backend:
   repo: lorenzoromagnoli/lorenzoromagnoli.me # Path to your Github repository
   branch: master # Branch to update
 
-media_folder: "img" # Media files will be stored in the repo under img folder
-#public_folder: "/img"
+media_folder: "site/static/img" # Media files will be stored in the repo under img folder
+public_folder: "img"
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
