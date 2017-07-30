@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: lorenzoromagnoli/lorenzoromagnoli.me # Path to your Github repository
+  repo: lorenzoromagnoli/hugoGruntKickstart # Path to your Github repository
   branch: master # Branch to update
 
 media_folder: "site/static/img" # Media files will be stored in the repo under img folder
