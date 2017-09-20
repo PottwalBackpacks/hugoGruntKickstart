@@ -3,12 +3,12 @@ module.exports = (grunt) ->
         pkg: grunt.file.readJSON('package.json')
         less:
             dev:
-                paths: ['site/themes/zen/static/less']
-                src: ['site/themes/zen/static/less/styles.less']
+                paths: ['site/themes/pottwal/static/less']
+                src: ['site/themes/pottwal/static/less/styles.less']
                 dest: 'site/static/css/style.css'
             dist:
-                paths: ['site/themes/zen/static/less']
-                src: ['site/themes/zen/static/less/styles.less']
+                paths: ['site/themes/pottwal/static/less']
+                src: ['site/themes/pottwal/static/less/styles.less']
                 dest: 'site/static/css/style.min.css'
                 options:
                     plugins: [
@@ -71,9 +71,9 @@ module.exports = (grunt) ->
         svg_sprite        : {
             dist          : {
                 expand    : true,
-                cwd       : 'site/themes/zen/static/svg/',
+                cwd       : 'site/themes/pottwal/static/svg/',
                 src       : '**/*.svg',
-                dest      : 'site/themes/zen/static/',
+                dest      : 'site/themes/pottwal/static/',
                 options   : "mode": {
                   "symbol": true,
                   "log": "verbose",
@@ -87,7 +87,7 @@ module.exports = (grunt) ->
                 atBegin: true
                 livereload: true
             less:
-                files: ['site/themes/zen/static/less/*.less']
+                files: ['site/themes/pottwal/static/less/*.less']
                 tasks: 'less:dev'
             coffee:
                 files: ['coffee/*.coffee']

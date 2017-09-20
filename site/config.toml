@@ -1,7 +1,7 @@
 baseurl = "https://pottwal.netlify.com/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme ="zen"
+theme ="pottwal"
 
 [params]
 
