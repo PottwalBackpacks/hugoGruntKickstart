@@ -10,7 +10,7 @@ $rat: #9B928C;
 
 $navbar-height: 70px;
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Asap|Open+Sans);
 
 // ------------- MIXINS ------------- //
 @mixin transition($time, $property: all, $easing: ease-in) {
@@ -25,6 +25,7 @@ $slide-number: 3;
 
 html, body {
   overflow: hidden;
+  margin: 0px;
 }
 
 
@@ -63,17 +64,10 @@ a:hover, a:focus{
     background-color: rgba(0,0,0,.3);
   }
   &:first-child {
-    background-image: url(../img/IMG_0836.jpg);
     transform: translateY(-$parallax-offset / 2);
     .content-wrapper {
       transform: translateY($parallax-offset /2);
     }
-  }
-  &:nth-child(2) {
-    background-image: url(../img/casino_vernier1.jpg);
-  }
-  &:nth-child(3) {
-    background-image: url(../img/tools-1083796.jpg);
   }
 }
 
@@ -89,19 +83,24 @@ a:hover, a:focus{
   height: 100vh;
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   flex-flow: column nowrap;
   color: #fff;
-  font-family: Montserrat;
+  font-family: Asap;
   text-transform: uppercase;
-  transform: translateY($content-offset);
+  //transform: translateY($content-offset);
   will-change: transform;
   backface-visibility: hidden;
+
   @include transition($transition-speed + .5, all, cubic-bezier(0.22, 0.44, 0, 1));
   }
   &-title {
-    font-size: 50px;
-    line-height: 1.4;
+    font-size: 45px;
+    line-height: 1.2;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    margin: 0px;
   }
 }
 
