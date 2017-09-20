@@ -1,20 +1,13 @@
 module.exports = (grunt) ->
     grunt.initConfig
         pkg: grunt.file.readJSON('package.json')
-        less:
-            dev:
-                paths: ['site/themes/pottwal/static/less']
-                src: ['site/themes/pottwal/static/less/styles.less']
-                dest: 'site/static/css/style.css'
-            dist:
-                paths: ['site/themes/pottwal/static/less']
-                src: ['site/themes/pottwal/static/less/styles.less']
-                dest: 'site/static/css/style.min.css'
-                options:
-                    plugins: [
-                        new (require 'less-plugin-autoprefix') browsers: ['> 0.1%']
-                        new (require 'less-plugin-clean-css') {}
-                    ]
+        sass: {
+            dist: {
+              files: {
+                'site/static/css/style.min.css' : 'site/themes/pottwal/static/scss/styles.scss'
+              }
+            }
+          }
         coffee:
             options:
                 join: true             # Concatenate before, not after compilation.
@@ -86,9 +79,9 @@ module.exports = (grunt) ->
             options:
                 atBegin: true
                 livereload: true
-            less:
-                files: ['site/themes/pottwal/static/less/*.less']
-                tasks: 'less:dev'
+            sass:
+                files: ['site/themes/pottwal/static/scss/*.scss']
+                tasks: 'sass:dist'
             coffee:
                 files: ['coffee/*.coffee']
                 tasks: ['coffee', 'copy:coffee']
@@ -131,13 +124,14 @@ module.exports = (grunt) ->
         'grunt-contrib-uglify'
         'grunt-contrib-copy'
         'grunt-contrib-less'
+        'grunt-contrib-sass'
         'grunt-contrib-watch'
         'grunt-contrib-connect'
         'grunt-responsive-images'
         'grunt-svg-sprite'
         'grunt-gh-pages'
     ]
-    grunt.registerTask 'dev', ['less:dev', 'coffee', 'copy:coffee', 'svg_sprite','responsive_images', 'hugo:dev']
-    grunt.registerTask 'default', ['less:dist', 'coffee', 'copy:coffee', 'uglify','svg_sprite', 'responsive_images', 'hugo:dist']
+    grunt.registerTask 'dev', [ 'sass:dist', 'coffee', 'copy:coffee', 'svg_sprite','responsive_images', 'hugo:dev']
+    grunt.registerTask 'default', [ 'sass:dist', 'coffee', 'copy:coffee', 'uglify','svg_sprite', 'responsive_images', 'hugo:dist']
     grunt.registerTask 'edit', ['connect', 'watch']
     grunt.registerTask 'deploy', ['gh-pages']
