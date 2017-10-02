@@ -11,6 +11,9 @@ $rat: #9B928C;
 $navbar-height: 70px;
 
 @import url(https://fonts.googleapis.com/css?family=Asap|Open+Sans);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/nav";
 
 // ------------- MIXINS ------------- //
 @mixin transition($time, $property: all, $easing: ease-in) {
@@ -38,8 +41,16 @@ a:hover, a:focus{
   text-decoration: none;
 }
 
-//this is for the backgrouunds in the parallax
 
+nav{
+	position: fixed;
+	z-index: 100;
+}
+
+
+//////////////////////////////////////////////
+//this is for the backgrouunds in the parallax
+//////////////////////////////////////////////
 .background {
   background-size: cover;
   background-repeat: no-repeat;
