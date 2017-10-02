@@ -10,7 +10,7 @@ theme ="pottwal"
 
 	# All blog posts are defined in their own files.
 
-	name = "your site name"
+	name = "pottwal"
 	claim = "we have what you want"
 
   # Navigation

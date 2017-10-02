@@ -71,12 +71,13 @@ module.exports = (grunt) ->
 				expand : true,
 				cwd : 'site/themes/pottwal/static/svg/',
 				src : '**/*.svg',
-				dest : 'site/themes/pottwal/static/',
+				dest : 'site/themes/pottwal/static',
 				options : "mode": {
 					"symbol": true,
 					"log": "verbose",
-					"inline": true,
+					"inline": true
 				}
+
 			}
 		}
 
