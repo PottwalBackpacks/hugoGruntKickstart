@@ -94,6 +94,9 @@ module.exports = (grunt) ->
 			hugo:
 				files: ['site/**']
 				tasks: 'hugo:dev'
+			svg:
+				files: ['site/themes/pottwal/static/svg/**']
+				tasks: 'svg_sprite:dist'
 			all:
 				files: ['Gruntfile.coffee']
 				tasks: 'dev'

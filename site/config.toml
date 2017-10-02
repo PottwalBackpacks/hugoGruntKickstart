@@ -19,10 +19,18 @@ theme ="pottwal"
 
 	[params.navigation.links]
 
-  [params.navigation.links.blog]
-		name     = "blog"
-		link = "/blog"
-
-  [params.navigation.links.services]
-  	name     = "services"
-  	link = "#services"
+  [params.navigation.links.products]
+		name     = "products"
+		link = "/products"
+  [params.navigation.links.collection]
+  	name     = "collection"
+  	link = "/collection"
+	[params.navigation.links.about]
+		name     = "about-us"
+		link = "/about"
+	[params.navigation.links.lookbook]
+		name     = "lookbook"
+		link = "/lookbook"
+	[params.navigation.links.contacts]
+		name     = "get in touch"
+		link = "/contacts"

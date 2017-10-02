@@ -15,6 +15,9 @@ $navbar-height: 70px;
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/nav";
 
+
+
+
 // ------------- MIXINS ------------- //
 @mixin transition($time, $property: all, $easing: ease-in) {
     transition: $property $time $easing;
@@ -37,15 +40,71 @@ html {
     width: 100%;
 }
 
-a:hover, a:focus{
-  text-decoration: none;
+
+// ------------- NAVBAR ------------- //
+#navigation{
+	svg.logo{
+		width: 100px;
+		use{
+			fill:white;
+		}
+	}
+	.navbar-nav{
+		right: 0px;
+	  position: absolute;
+
+		a{
+			color: #fff;
+			text-transform: uppercase;
+			font-family: Asap;
+
+		}
+	}
 }
-
-
 nav{
 	position: fixed;
 	z-index: 100;
 }
+
+
+h1,h2,h3,h4,h5{
+	font-family: Asap;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+}
+
+//////////////////////////////////////////////
+//this is for the pages with the parallax effect
+//////////////////////////////////////////////
+
+.main{
+	position: absolute;
+	top: 0px;
+}
+
+.header-img{
+	height: 70%;
+	background-position: center ;
+	background-size: cover;
+	width: 100%;
+	top: 0;
+	margin-top: -30%;
+}
+
+.section-img{
+	height: 60%;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	top: 0;
+}
+
+
+
 
 
 //////////////////////////////////////////////
@@ -62,6 +121,7 @@ nav{
   position: fixed;
   width: 100%;
   transform: translateY($parallax-offset);
+	background-color: white;
   @include transition($transition-speed, all, cubic-bezier(0.22, 0.44, 0, 1));
   &:before {
     content: "";
@@ -72,7 +132,7 @@ nav{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.3);
+    //background-color: rgba(0,0,0,.3);
   }
   &:first-child {
     transform: translateY(-$parallax-offset / 2);
@@ -96,7 +156,6 @@ nav{
   justify-content: center;
   text-align: left;
   flex-flow: column nowrap;
-  color: #fff;
   font-family: Asap;
   text-transform: uppercase;
   //transform: translateY($content-offset);
@@ -108,10 +167,10 @@ nav{
   &-title {
     font-size: 45px;
     line-height: 1.2;
-    position: absolute;
     bottom: 50px;
-    left: 50px;
     margin: 0px;
+		position: absolute;
+		left: 0px;
   }
 }
 
