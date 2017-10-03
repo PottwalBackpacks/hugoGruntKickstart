@@ -55,6 +55,7 @@ a:hover {
 
 p{
 	margin: 0px;
+	text-align: justify;
 }
 .fp-bg{
 	background-position: center;
@@ -74,27 +75,52 @@ p{
 			color: white;
 		}
 	}
+	.content{
+		bottom: 0;
+		background-color: white;
+		position: absolute;
+		width: 100%;
+	}
 
 	&.slide-header{
-
 		background-color: white;
-		.fp-bg{
-			height: 70% !important;
-		}.content{
-			margin-top: 70%;
+		.content{
+			height: 30%;
 		}
 	}
 
-	&.slide-with-text{
+	&.slide-with-text-and-image{
 		background-color: white;
-
-		.fp-bg{
-			height: 60% !important;
-		}.content{
-			margin-top: 60%;
+		.content{
+			height: 50%;
 			.two-columns{
 				column-count: 2;
 			}
+			.one-columns{
+				max-width: 70%;
+				margin: auto
+			}
 		}
+	}
+	&.slide-with-text-only{
+		background-color: white;
+		padding-top: 100px; 
+		.content{
+			height: 100%;
+
+		}
+	}
+}
+
+
+.material-list{
+	margin: auto;
+	padding: 0px;
+	li.material{
+		display: inline-block;
+		background-color: black;
+		list-style: none;
+		width: 50px;
+		height: 50px;
 	}
 }

@@ -1,13 +1,9 @@
-<section class="section slide-header">
+<section class="section slide-with-text-and-image">
 	<div class="fp-bg" style="background-image: url(../img/{{.Get "img" }})"></div>
 	<div class="content">
 		<div class="container">
-			<div class="title">
-				<h2>
-				{{.Get "title" }}
-			</h2>
-			<hr class="arrow-down" />
-
+			<div class="one-columns">
+				{{ .Inner }}
 			</div>
 		</div>
 	</div>
