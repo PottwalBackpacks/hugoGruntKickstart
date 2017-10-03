@@ -138,7 +138,7 @@ module.exports = (grunt) ->
 		'grunt-svg-sprite'
 		'grunt-gh-pages'
 	]
-	grunt.registerTask 'dev', [ 'sass:dist', 'copy:main', 'svg_sprite','responsive_images', 'hugo:dev']
-	grunt.registerTask 'default', [ 'sass:dist', 'copy:main', 'uglify','svg_sprite', 'responsive_images', 'hugo:dist']
+	grunt.registerTask 'dev', [ 'copy:main','sass:dist', 'svg_sprite','responsive_images', 'hugo:dev']
+	grunt.registerTask 'default', [ 'copy:main','sass:dist', 'uglify','svg_sprite', 'responsive_images', 'hugo:dist']
 	grunt.registerTask 'edit', ['connect', 'watch']
 	grunt.registerTask 'deploy', ['gh-pages']
