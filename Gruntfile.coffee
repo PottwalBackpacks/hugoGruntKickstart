@@ -21,10 +21,11 @@ module.exports = (grunt) ->
 				# includes files within path
 				expand: true,
 				src: [
+					'node_modules/fullpage.js/**',
 					'node_modules/bootstrap/**',
 					'node_modules/jquery/**'
 					'node_modules/underscore/**'
-
+					'node_modules/tether/**'
 					],
 				dest: 'site/themes/pottwal/static',
 				filter: 'isFile'
