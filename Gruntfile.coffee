@@ -23,9 +23,10 @@ module.exports = (grunt) ->
 				src: [
 					'node_modules/fullpage.js/**',
 					'node_modules/bootstrap/**',
-					'node_modules/jquery/**'
-					'node_modules/underscore/**'
-					'node_modules/tether/**'
+					'node_modules/jquery/**',
+					'node_modules/tether/**',
+					'node_modules/masonry-layout/**'
+					'node_modules/imagesloaded/**'
 					],
 				dest: 'site/themes/pottwal/static',
 				filter: 'isFile'

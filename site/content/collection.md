@@ -35,4 +35,4 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 ### Fodera 4
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 {{% /column %}}
-{{% /section_with_image %}}
+{{% /section_with_multiple_columns %}}
