@@ -1,6 +1,6 @@
 +++
 date = "2017-10-02T16:40:29+02:00"
-title = "about"
+title = "lookbook"
 type = "page"
 layout = "no-parallax"
 +++
