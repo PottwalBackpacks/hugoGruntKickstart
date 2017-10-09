@@ -12,9 +12,20 @@ $(document).ready(function() {
 		  columnWidth: '.grid-sizer',
 		  percentPosition: true
 		});
-		
+
 	// layout Masonry after each image loads
 	$grid.imagesLoaded().progress(function() {
 		$grid.masonry('layout');
 	});
 });
+
+//handle netlify redirect after auth
+if (window.netlifyIdentity) {
+	window.netlifyIdentity.on("init", user => {
+		if (!user) {
+			window.netlifyIdentity.on("login", () => {
+				document.location.href = "/admin/";
+			});
+		}
+	});
+}
