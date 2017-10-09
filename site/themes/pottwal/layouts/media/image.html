@@ -1,3 +1,6 @@
 
     <h1>{{ .Title }}</h1>
+		<div class="url">
+			{{.Param "img" }}
+		</div>
 		<img src="{{ .Site.BaseURL }}img/{{.Param "img" }}" />

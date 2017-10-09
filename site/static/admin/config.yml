@@ -34,3 +34,5 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "image", name: "img", widget: "image"}
+      - {label: "type", name: "media", widget: "hidden",default:"media"}
+      - {label: "layout", name: "image", widget: "hidden",default:"image"}
