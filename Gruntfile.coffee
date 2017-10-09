@@ -27,7 +27,7 @@ module.exports = (grunt) ->
 					'node_modules/tether/**',
 					'node_modules/masonry-layout/**'
 					'node_modules/imagesloaded/**',
-					'node_modules/netlify-cms/**'
+					'node_modules/netlify-cms/**',
 					],
 				dest: 'site/themes/pottwal/static',
 				filter: 'isFile'
