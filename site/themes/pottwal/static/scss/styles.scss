@@ -13,30 +13,30 @@ $navbar-height: 70px;
 @import "../node_modules/fullpage.js/dist/jquery.fullpage.min.css";
 // ------------- NAVBAR ------------- //
 #navigation {
+	    padding-top: 40px;
+	.navbar-brand{
+		margin-top: -40px;
+	}
+
 	svg.logo {
-		width: 100px;
+		width: 80px;
+		height: 80px;
 
 		use {
-			fill: white;
+			fill: black;
+			height: 80px;
 		}
 	}
 
 	.navbar-nav {
-		right: 0;
-		position: absolute;
-
 		a {
-			color: #fff;
+			color: #000;
 			text-transform: uppercase;
 			font-family: Asap;
 		}
 	}
 }
 
-nav {
-	position: fixed;
-	z-index: 100;
-}
 
 h1,
 h2,
@@ -120,7 +120,6 @@ body , html , .main{
 		}
 	}
 }
-
 
 .material-list{
 	margin: auto;
