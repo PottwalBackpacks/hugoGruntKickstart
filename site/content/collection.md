@@ -4,11 +4,11 @@ title: collection
 date: '2017-10-02T16:40:29+02:00'
 ---
 {{< slide_head img="casino.jpg" title="collection" >}}
-{{< section_with_2col_and_image img="craft.jpg" %>}}
+{{< section_with_2col_and_image img="craft.jpg" >}}
 
 # Hidden Heritage
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Mortacci de pippa
 {{< /section_with_2col_and_image >}}
 {{% section_with_1col img="craft.jpg" %}}
 
