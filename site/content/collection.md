@@ -3,7 +3,7 @@ layout: parallax
 title: collection
 date: '2017-10-02T16:40:29+02:00'
 ---
-{{< slide_head img="casino.jpg" title="collection" >}}
+{{< slide_head img="spietrosmall.jpg" title="collection" >}}
 {{< section_with_2col_and_image img="craft.jpg" >}}
 
 # Hidden Heritage
