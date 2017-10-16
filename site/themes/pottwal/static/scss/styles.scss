@@ -40,7 +40,7 @@ html {
 			bottom: 50px;
 			margin: 0;
 			position: absolute;
-			color: white;
+			color: black;
 			text-align: left;
 		}
 	}
@@ -59,12 +59,12 @@ html {
 			background-color: transparent;
 
 			.title {
-				color: white;
+				color: black;
 
 				h2 {
 					font-size: 140px;
-					color: white;
 					text-align: center;
+					transform: all .5s;
 				}
 			}
 		}
@@ -114,6 +114,14 @@ html {
 		height: 50px;
 	}
 }
+
+.footer{
+	.footer-wrapper{
+		background-color: black;
+		height: 320px;
+	}
+}
+
 
 //this is for masonry
 /* fluid 3 columns */
