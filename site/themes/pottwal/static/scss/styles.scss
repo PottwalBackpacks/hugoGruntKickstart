@@ -44,6 +44,21 @@ $navbar-height: 70px;
 	}
 }
 
+.arrow-down{
+	position: fixed;
+	text-align: right;
+	height: 50px;
+	bottom: 50px;
+	width: 100%;
+	z-index: 2;
+
+	svg.icon {
+		fill: black;
+		height: 50px;
+		width: 50px;
+		position: relative;
+	}
+}
 
 h1,
 h2,
@@ -54,6 +69,8 @@ h5 {
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
+	text-align: left;
+	color: black;
 }
 
 a:focus,
@@ -117,6 +134,8 @@ body , html , .main{
 				color: white;
 				h2{
 				font-size: 140px;
+				color: white;
+				text-align:center;
 				}
 			}
 		}
@@ -138,14 +157,14 @@ body , html , .main{
 			}
 		}
 	}
+
 	&.slide-with-text-only{
 		background-color: white;
-		padding-top: 100px;
-		.content{
-			height: 100%;
-
+		h1{
+			margin-bottom: 100px;
 		}
 	}
+
 }
 
 .material-list{
