@@ -7,103 +7,33 @@ $white: #fff;
 $rat: #9B928C;
 $navbar-height: 70px;
 @import url(https://fonts.googleapis.com/css?family=Arapey|Fjalla+One);
-
 @import "../node_modules/fullpage.js/dist/jquery.fullpage.min.css";
-// ------------- NAVBAR ------------- //
-#navigation {
-	height: 320px;
-	position: fixed;
-	z-index: 1;
-	width: 100%;
-	background-color: white;
 
-	.navbar-brand{
-		text-align: center;
-		margin-top: 80px;
-		margin-bottom: 80px;
-	}
+@import "./navigation.scss";
+@import "./fonts.scss";
+@import "./inverted.scss";
 
-	svg.logo {
-		fill: black;
-		height: 115px;
-	}
-	.nav-item{
-		text-align: center;
-
-		a {
-			color: #000;
-			text-transform: uppercase;
-			font-family: 'Fjalla One', sans-serif;
-			font-weight: bold;
-		}
-	}
-	transition: all .5s;
-	&.small{
-		//height: 80px;
-		margin-top: -260px;
-	}
-}
-
-.arrow-down{
-	position: fixed;
-	text-align: right;
-	height: 50px;
-	bottom: 50px;
-	width: 100%;
-	z-index: 2;
-
-	svg.icon {
-		fill: black;
-		height: 50px;
-		width: 50px;
-		position: relative;
-	}
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-	font-family: 'Fjalla One', sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-align: left;
-	color: black;
-}
-
-a:focus,
-a:hover {
-	text-decoration: none;
-}
-
-p{
-	margin: 0px;
-	text-align: justify;
+.main,
+body,
+html {
+	height: 100%;
+	position: relative;
 	font-family: 'Arapey', serif;
-
 }
-.fp-bg{
+
+.fp-bg {
 	background-position: center;
 	background-size: cover;
 	height: 100%;
 }
 
-body , html , .main{
-	height: 100%;
-	position: relative;
-	font-family: 'Arapey', serif;
-
-}
-
-
-.section{
+.section {
 	height: 100%;
 
-	.content-wrapper{
+	.content-wrapper {
 		height: 100%;
-		padding: 0px;
+		padding: 0;
+
 		.content-title {
 			font-size: 45px;
 			line-height: 1.2;
@@ -114,69 +44,69 @@ body , html , .main{
 			text-align: left;
 		}
 	}
-	.content{
+
+	.content {
 		width: 100%;
 	}
 
-	&.slide-header{
+	&.slide-header {
 		//background-color: white;
 		height: 100%;
 
-		.content{
+		.content {
 			position: absolute;
 			top: 50%;
 			background-color: transparent;
 
-			.title{
+			.title {
 				color: white;
-				h2{
-				font-size: 140px;
-				color: white;
-				text-align:center;
+
+				h2 {
+					font-size: 140px;
+					color: white;
+					text-align: center;
 				}
 			}
 		}
-
-
-
 	}
 
-	&.slide-with-text-and-image{
+	&.slide-with-text-and-image {
 		background-color: white;
-		.content{
+
+		.content {
 			bottom: 0;
 			background-color: white;
 			position: absolute;
 			width: 100%;
 			height: 50%;
 
-			.two-columns{
+			.two-columns {
 				column-count: 2;
 			}
-			.one-columns{
+
+			.one-columns {
 				max-width: 70%;
-				margin: auto
+				margin: auto;
 			}
 		}
 	}
 
-	&.slide-with-text-only{
+	&.slide-with-text-only {
 		background-color: white;
-		h1{
+
+		h1 {
 			margin-bottom: 100px;
 		}
 	}
 
-	&.slide-with-multiple-columns{
-
-	}
-
+	&.slide-with-multiple-columns {}
 }
 
-.material-list{
+.material-list {
 	margin: auto;
-	padding: 0px;
-	li.material{
+	padding: 0;
+
+	li.material {
 		display: inline-block;
 		background-color: black;
 		list-style: none;
@@ -185,6 +115,7 @@ body , html , .main{
 	}
 }
 
+//this is for masonry
 /* fluid 3 columns */
 .grid-sizer,
 .grid-item { width: 33%; padding: 2px; }

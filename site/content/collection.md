@@ -3,7 +3,7 @@ layout: parallax
 title: collection
 date: '2017-10-02T16:40:29+02:00'
 ---
-{{% slide_head img="spietrosmall.jpg" title="collection" %}}
+{{% slide_head img="spietrosmall.jpg" title="collection" class="inverted"%}}
 {{% section_with_img_only img="craft.jpg" %}}
 {{% section_with_text_only %}}
 

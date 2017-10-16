@@ -1,0 +1,27 @@
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Fjalla One', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+}
+
+a:focus,
+a:hover,
+a:active {
+	text-decoration: none;
+	border-botton: 2px solid yellow;
+}
+
+p{
+	margin: 0px;
+	text-align: justify;
+	font-family: 'Arapey', serif;
+
+}

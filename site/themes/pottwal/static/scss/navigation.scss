@@ -1,0 +1,51 @@
+// ------------- NAVBAR ------------- //
+#navigation {
+	height: 320px;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	background-color: white;
+
+	.navbar-brand{
+		text-align: center;
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+
+	svg.logo {
+		fill: black;
+		height: 115px;
+	}
+	.nav-item{
+		text-align: center;
+
+		a {
+			color: #000;
+			text-transform: uppercase;
+			font-family: 'Fjalla One', sans-serif;
+			font-weight: bold;
+		}
+	}
+	transition: all .5s;
+	&.small{
+		//height: 80px;
+		margin-top: -260px;
+	}
+}
+
+.arrow-down{
+	position: fixed;
+	text-align: right;
+	height: 50px;
+	bottom: 50px;
+	width: 100%;
+	z-index: 2;
+
+	svg.icon {
+		fill: black;
+		height: 50px;
+		width: 50px;
+		position: relative;
+		transition: all .2s;
+	}
+}

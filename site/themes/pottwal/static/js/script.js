@@ -1,11 +1,24 @@
+var loadedSlide;
+
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		parallax: true,
 		parallaxKey: 'bmV0bGlmeS5jb21fOTFDY0dGeVlXeHNZWGc9U3hw',
+		scrollOverflow: true,
+
 		//events
 		onLeave: function(index, nextIndex, direction) {
-			slideLeave(index, nextIndex, direction);
+			if (index == 1) {
+				$('#navigation').toggleClass('small', true);
+			}
+			if (nextIndex == 1) {
+				$('#navigation').toggleClass('small', false);
+			}
 		},
+		afterLoad: function( anchorLink, index){
+        loadedSlide = $(this);
+				checkIfInverted();
+    },
 	});
 	// init Masonry
 	var $grid = $('.grid').masonry({
@@ -32,11 +45,10 @@ if (window.netlifyIdentity) {
 	});
 }
 
-function slideLeave(index, nextIndex, direction) {
-	if (index == 1) {
-		$('#navigation').toggleClass('small', true);
-	}
-	if (nextIndex == 1) {
-		$('#navigation').toggleClass('small', false);
+function checkIfInverted(){
+	if($(loadedSlide).hasClass('inverted')){
+		$('body').toggleClass('inverted',true);
+	}else{
+		$('body').toggleClass('inverted',false);
 	}
 }
