@@ -18,16 +18,17 @@ $navbar-height: 70px;
 	svg.logo {
 		width: 80px;
 		height: 80px;
+		fill: white;
 
 		use {
-			fill: black;
+			fill: white;
 			height: 80px;
 		}
 	}
 
 	.navbar-nav {
 		a {
-			color: #000;
+			color: #fff;
 			text-transform: uppercase;
 			font-family: Asap;
 			font-weight: bold;
@@ -72,13 +73,13 @@ body , html , .main{
 
 	.content-wrapper{
 		height: 100%;
+		padding: 0px;
 		.content-title {
 			font-size: 45px;
 			line-height: 1.2;
 			bottom: 50px;
 			margin: 0;
 			position: absolute;
-			left: 0;
 			color: white;
 		}
 	}
