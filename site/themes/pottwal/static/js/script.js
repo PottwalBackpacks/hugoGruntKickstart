@@ -2,16 +2,18 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		parallax: true,
 		parallaxKey: 'bmV0bGlmeS5jb21fOTFDY0dGeVlXeHNZWGc9U3hw',
-
+		//events
+		onLeave: function(index, nextIndex, direction) {
+			slideLeave(index, nextIndex, direction);
+		},
 	});
-
 	// init Masonry
 	var $grid = $('.grid').masonry({
 		itemSelector: '.grid-item',
-		  // use element for option
-		  columnWidth: '.grid-sizer',
-		  percentPosition: true
-		});
+		// use element for option
+		columnWidth: '.grid-sizer',
+		percentPosition: true
+	});
 
 	// layout Masonry after each image loads
 	$grid.imagesLoaded().progress(function() {
@@ -28,4 +30,13 @@ if (window.netlifyIdentity) {
 			});
 		}
 	});
+}
+
+function slideLeave(index, nextIndex, direction) {
+	if (index == 1) {
+		$('#navigation').toggleClass('small', true);
+	}
+	if (nextIndex == 1) {
+		$('#navigation').toggleClass('small', false);
+	}
 }
