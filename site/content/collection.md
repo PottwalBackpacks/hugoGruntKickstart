@@ -35,7 +35,7 @@ Precious vegetable-tanned, live cut, calf leather is used for bottom, back strap
 {{% /section_with_1col %}}
 {{% section_with_1col img="interno.jpg" %}}
 
-# INSIDE
+# LININGS
 
 Inside, the backpack is lined with motivs inspired by the cultural heritage forever embedded in the pavements of Italian churches, palaces and squares; patterns that have always been there to amaze eyes and souls of the sharp observants throughout the centuries.
 {{% /section_with_1col %}}
@@ -65,3 +65,12 @@ Between the Rialto Bridge and St. Marco square in Venice, near the Bareteri Brid
 From his first consecration in 832 AD To the present day, the Basilica of San Marco remains one of the symbols of the city of Venice. Among the dozens of marble floors inside, we were inspired by the figure of the starred dodecahedron attributed to Paolo Uccello, a Florentine painter who lived in Venice between 1425 and 1430 AD.
 {{% /column %}}
 {{% /section_with_multiple_columns %}}
+
+# EVERYDAY PRACTICALITY
+
+The backpack is designed to carry all the items needed for a day; it comes with a soft-padded backrest and a roomy internal pocket to accomodate a 14 inch laptop.
+
+
+{{% littleGrid %}}
+{{% /section_with_1col %}}
+{{% section_with_1col img="interno.jpg" %}}
