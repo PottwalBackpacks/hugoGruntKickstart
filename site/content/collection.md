@@ -4,15 +4,15 @@ title: collection
 date: '2017-10-02T16:40:29+02:00'
 ---
 {{% slide_head img="spietrosmall.jpg" title="collection" class="inverted"%}}
-{{% section_with_img_only img="craft.jpg" %}}
+//{{% section_with_img_only img="craft.jpg" %}}
 {{% section_with_text_only %}}
 
 # Hidden Heritage
 
-By admiring Vesuvius’ towering profile through the columns of a Roman domus in ancient Pompeii; passing the thresholds of St. Peter’s Basilica in Rome; walking through the corridors by the Uffizi Gallery in Florence, surrounded by statues and paintings ; crossing the Canal Grande on a gondola boat in Venice, or strolling along the naves of the Duomo in Milan, we are reminded that the essence of beauty is hidden in the fundamental details, like the very land beneath our feet.
-
+By admiring Vesuvius’ towering profile through the columns of a Roman domus in ancient Pompeii; passing the thresholds of St. Peter’s Basilica in Rome; walking through the corridors by the Uffizi Gallery in Florence or crossing the Canal Grande on a gondola boat in Venice, we are reminded that the essence of beauty is hidden in the fundamental details, like the very land beneath our feet.
+<br>
 The capsule collection “Hidden heritage” was born for people who express their unconscious tastes and desires through accessories and niceties that define their eclectic style and the urge to be different, maintaining the formal nature of the status quo.
-
+<br>
 This is all in pursuit of a simple goal, to give shape to a high-quality, crafted artifact, that is unique and handmade by Italian artisans, using techniques that transform expertise into art, thus creating a classic, timeless, and functional object.
 {{% /section_with_text_only %}}
 {{% section_with_1col img="craft.jpg" %}}
