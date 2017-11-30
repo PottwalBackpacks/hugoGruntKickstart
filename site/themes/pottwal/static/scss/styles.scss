@@ -122,6 +122,9 @@ html {
 	}
 }
 
+.container{
+	height: 100%;
+}
 
 //this is for masonry
 /* fluid 3 columns */
@@ -129,3 +132,16 @@ html {
 .grid-item { width: 33%; padding: 2px; }
 /* 2 columns */
 .grid-item--width2 { width: 66%; }
+
+
+.v-center{
+	margin-top: 50%;
+	position: relative;
+	transform: translateY(-50%);
+}
+
+.h-center{
+	h2, h3{
+		text-align: center;
+	}
+}

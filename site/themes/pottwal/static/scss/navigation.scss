@@ -8,14 +8,30 @@
 
 	.navbar-brand{
 		text-align: center;
-		margin-top: 80px;
-		margin-bottom: 80px;
+		// margin-top: 80px;
+		// margin-bottom: 80px;
+		margin: 80px auto;
+
+		@media only screen and (max-width: 480px){
+			max-width: 100%;
+		}
 	}
+
 
 	svg.logo {
 		fill: black;
 		height: 115px;
 	}
+
+	svg.side-logo{
+		width: 100px;
+		height: 71px;
+		margin-top: -10px;
+		margin-left: -500px;
+		position: absolute;
+		transition: all .7s ease-in-out;
+	}
+
 	.nav-item{
 		text-align: center;
 
@@ -30,8 +46,20 @@
 	&.small{
 		//height: 80px;
 		margin-top: -260px;
+
+		svg.side-logo{
+			margin-left: -10px;
+		}
+
+	}
+
+	&.temporary{
+		height: 260px;
+		&.small{
+		}
 	}
 }
+
 
 .arrow-down{
 	position: fixed;
