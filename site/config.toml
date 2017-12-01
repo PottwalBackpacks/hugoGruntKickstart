@@ -1,4 +1,4 @@
-baseurl = "https://pottwal.netlify.com/"
+baseurl = "http://www.pottwal.it/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme ="pottwal"
