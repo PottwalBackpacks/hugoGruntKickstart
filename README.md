@@ -11,10 +11,12 @@
 ## modificare testi:
 - per modificare i testi in home e collection andare su /site/layouts/pages
 - all'interno ci sono i tre file html che generano le pagine.
-- modifcare con cura, attenti a togliere o modificare la struttura dei 
+- modifcare con cura, attenti a togliere o modificare la struttura dei div, meglio se si copia da <section> a </section>
+- per commentare mettere <!-- -->
 
-
-
+## modificare lookbook:
+- aggiungere le immagini che servono alla cartella src/images
+- aggiungere una riga dentro al file /site/layouts/pages/lookbook per ogni immagine specificando il nome del file a la dimensione.
 
 
 
