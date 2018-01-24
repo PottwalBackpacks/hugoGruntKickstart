@@ -1,3 +1,24 @@
+# come modificare il sito:
+
+## caricare media:
+- Le foto stanno dentro la cartella src/images.
+- se serve aggiungere o modificare una foto buttarla li dentro.
+- premere sul pulsante upload file,
+- scrivere qualcosa nel messaggio di commit
+- e schiacciare commit.
+
+
+## modificare testi:
+- per modificare i testi in home e collection andare su /site/layouts/pages
+- all'interno ci sono i tre file html che generano le pagine.
+- modifcare con cura, attenti a togliere o modificare la struttura dei 
+
+
+
+
+
+
+
 # Victor Hugo
 
 **A Hugo boilerplate for creating truly epic websites**
