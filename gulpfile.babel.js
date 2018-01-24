@@ -33,11 +33,11 @@ gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 gulp.task("build", ["less", "js", "sprites","img-sequence", "copyVideo", "favicon"], (cb) => buildSite(cb, [], "production"));
 
 gulp.task('img-sequence', function (cb) {
-  gulpSequence("frame-animations","responsive_animations","images", cb)
+  gulpSequence("images", cb)
 })
 
 
-gulp.task("build-preview", ["less", "js", "sprites","frame-animations", "images",  "copyVideo", "favicon"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("build-preview", ["less", "js", "sprites", "images",  "copyVideo", "favicon"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
 
 // // Compile CSS with PostCSS
 // gulp.task("css", () => (
@@ -150,59 +150,6 @@ gulp.task('images', function() {
 		.pipe(gulp.dest('dist/assets/img'));
 });
 
-
-//task for responsive images
-gulp.task('responsive_animations', function() {
-	return gulp.src(['src/frameAnimationsCompound/*.{jpg,png}'])
-		.pipe(responsive({
-			'*': [ {
-					width: 800,
-					withoutEnlargement: false,
-					rename: {
-						suffix: '-medium'
-					},
-				}, {
-					width: 600,
-					withoutEnlargement: false,
-					rename: {
-						suffix: '-small'
-					},
-				},
-			]
-		}, {
-			// Global configuration for all images
-			// The output quality for JPEG, WebP and TIFF output formats
-			quality: 70,
-			// Use progressive (interlace) scan for JPEG and PNG output
-			progressive: true,
-			// Zlib compression level of PNG output format
-			compressionLevel: 6,
-			// Strip all metadata
-			withMetadata: false,
-
-			skipOnEnlargement: false,
-			errorOnEnlargement: false,
-
-		}))
-		.pipe(gulp.dest('dist/assets/animations'));
-});
-
-//task for animations
-
-var frameAnimationsFolder = 'src/frameAnimation';
-
-gulp.task('frame-animations', folders(frameAnimationsFolder, function(folder) {
-	console.log("reading from ", folder)
-	var spriteData = gulp.src(path.join(frameAnimationsFolder, folder, '*.png')).pipe(spritesmith({
-		imgName: folder.concat(".png"),
-		cssName: folder.concat(".css"),
-		algorithm: 'top-down',
-		algorithmOpts: {
-			sort: false
-		}
-	}));
-	return spriteData.pipe(gulp.dest('src/frameAnimationsCompound'));
-}));
 
 // Development server with browsersync
 gulp.task("server", ["hugo", "less", "js"], () => {
