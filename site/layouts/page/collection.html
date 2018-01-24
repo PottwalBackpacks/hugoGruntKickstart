@@ -2,8 +2,11 @@
 
 <div class="main" id="fullpage">
 
-	{{ partial "slide_head" (dict "imageName" "spietrosmall.jpg" "title" "collection" ) }} {{ partial "section_with_img_only" (dict "imageName" "craft.jpg" ) }}
+	{{ partial "slide_head" (dict "imageName" "spietrosmall.jpg" "title" "collection" ) }}
 
+	<section class="section slide-with-image-only">
+		{{ partial "fp-bg" (dict "imageName" "craft.jpg") }}
+	</section>
 
 	<section class="section slide-with-text-only">
 		<div class="container">
