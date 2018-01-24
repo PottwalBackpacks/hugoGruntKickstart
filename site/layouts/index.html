@@ -1,10 +1,8 @@
-{{ partial "header" . }}
+{{ partial "header.html" .}}
+ <!-- {{ partial "nav_temporary.html" .}}  -->
 
-<h1>Hugo with Gulp, Less and Webpack</h1>
+{{ partial "nav.html" .}}
 
-<p>
-  Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
-	then modified <a href="https://github.com/lorenzoromagnoli/victor-hugo">by Lorenzo</a>
-</p>
+{{ partial "landing.html" .}}
 
-{{ partial "footer" . }}
+{{partial "footer.html" .}}

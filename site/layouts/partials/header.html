@@ -1,10 +1,45 @@
-<!doctype html>
-<html lang="{{ $.Site.Language.Lang }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="{{ $.Site.BaseURL }}">
-    <title>{{ $.Site.Title }}</title>
-    <link rel="stylesheet" href="css/main.css"/>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+	<!-- CSS Reset -->
+	<!-- <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css"> -->
+
+	<!-- Milligram CSS minified -->
+	<!-- <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css"> -->
+
+	<!-- You should properly set the path from the main file. -->
+
+	<link rel="stylesheet" href="/css/main.css" />
+
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="{{ .Site.BaseURL }}img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ .Site.BaseURL }}img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ .Site.BaseURL }}img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ .Site.BaseURL }}img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ .Site.BaseURL }}img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ .Site.BaseURL }}img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ .Site.BaseURL }}img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ .Site.BaseURL }}img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="{{ .Site.BaseURL }}img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{ .Site.BaseURL }}img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}img/favicons/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#34BCEF">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#34BCEF">
+
+
+</head>
+
+<body>
+
+	<div id="svgContainer"></div>

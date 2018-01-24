@@ -1,9 +1,29 @@
-baseurl = "/"
+baseurl = "http://pottwal.it/"
 languageCode = "en-us"
-languageLang = "en"
-title = "My new Victor-Hugo site"
+title = "My New Hugo Site"
 
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All blog posts are defined in their own files.
+
+	name = "pottwal"
+	claim = "we have what you want"
+
+  # Navigation
+	[params.navigation]
+		brand = "brand"
+
+	[params.navigation.links]
+
+  [params.navigation.links.collection]
+  	name     = "collection"
+  	link = "/collection"
+	[params.navigation.links.about]
+		name     = "about-us"
+		link = "/about"
+	[params.navigation.links.lookbook]
+		name     = "lookbook"
+		link = "/lookbook"
