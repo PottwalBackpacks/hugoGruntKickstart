@@ -1,0 +1,7 @@
+<img	src="/assets/img/{{replace .imageName "." "-small." }}" class="{{.class}}" data-normal="/assets/img/{{replace .imageName "." "-original." }}"
+			data-retina="/assets/img/{{replace .imageName "." "-retina." }}"
+			data-srcset="	/assets/img/{{replace .imageName "." "-small." }} 320w,
+										/assets/img/{{replace .imageName "." "-small." }} 768w,
+										/assets/img/{{replace .imageName "." "-medium." }} 1024w,
+										/assets/img/{{replace .imageName "." "-large." }} 2x"
+										>

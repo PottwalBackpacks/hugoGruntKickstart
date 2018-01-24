@@ -1,0 +1,37 @@
+<section id="navigation">
+
+	<div class="container">
+
+		<div class="row logo-container">
+			<a class="navbar-brand span-12 center" href="{{ .Site.BaseURL }}">
+				<svg class="icon logo"><use xlink:href="#logo"></use></svg>
+			</a>
+		</div>
+
+		<div class="row menu-container">
+
+			<a class="navbar-brand-small " href="{{ .Site.BaseURL }}">
+				<svg class="icon logo-small"><use xlink:href="#logo-small"></use></svg>
+			</a>
+
+			{{ range .Site.Params.navigation.links }}
+			<div class="center nav-item">
+				<a class="nav-link" href="{{ .Site.BaseURL }} {{ .link }}">
+					{{ .name }}
+				</a>
+			</div>
+			{{end}}
+		</div>
+
+	</div>
+</section>
+
+<div class="arrow-down">
+	<div class="container">
+		<svg class="icon arrow"><use xlink:href="#arrow"></use></svg>
+
+		<!-- <svg class="icon">
+			<use xlink:href="{{ .Site.BaseURL }}symbol/svg/sprite.symbol.svg#arrow" />
+			</svg> -->
+	</div>
+</div>

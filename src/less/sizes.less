@@ -1,0 +1,24 @@
+/* Mobile First Media Queries */
+@tablet: ~"screen and (min-width: 735px)";
+@desktop: ~"screen and (min-width: 1025px)";
+@desktopHD: ~"screen and (min-width: 1600px)";
+
+.container {
+	padding: 0 1.5rem;
+//	max-width: 1500px;
+//	margin: 0 auto;
+	position: relative;
+	height: 100%;
+
+	@media @tablet {
+		padding: 0 2rem;
+	}
+	@media @desktop {
+		padding: 0 3rem;
+	}
+}
+
+.container-full {
+	padding: 0 0.5rem;
+	margin: 0 auto;
+}

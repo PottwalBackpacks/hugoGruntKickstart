@@ -1,0 +1,52 @@
+{{ partial "header.html" .}} {{ partial "nav.html" .}}
+
+<div class="main" id="fullpage">
+
+	{{ partial "slide_head" (dict "imageName" "1L.jpg" "title" "lookbook" ) }}
+
+	<section class="section fp-auto-height fp-scrollable">
+		<div class="container">
+			<div class="grid">
+				<div class="grid-sizer"></div>
+			  <div class="gutter-sizer"></div>
+			  <div class="grid-item"></div>
+				
+					{{ partial "gridItem" (dict "imageName" "2L.jpg" "gridWidth" "1 " ) }}
+					{{ partial "gridItem" (dict "imageName" "3L.jpg" "gridWidth" "2 " ) }}
+					{{ partial "gridItem" (dict "imageName" "4L.jpg" "gridWidth" "3 " ) }}
+					{{ partial "gridItem" (dict "imageName" "5L.jpg" "gridWidth" "1 " ) }}
+					{{ partial "gridItem" (dict "imageName" "7L.jpg" "gridWidth" "1 " ) }}
+					{{ partial "gridItem" (dict "imageName" "8L.jpg" "gridWidth" "2 " ) }}
+					{{ partial "gridItem" (dict "imageName" "9L.jpg" "gridWidth" "1 " ) }}
+					{{ partial "gridItem" (dict "imageName" "10L.jpg" "gridWidth" "3 " ) }}
+					{{ partial "gridItem" (dict "imageName" "11L.jpg" "gridWidth" "2 " ) }}
+					{{ partial "gridItem" (dict "imageName" "13L.jpg" "gridWidth" "1 " ) }}
+
+					{{ partial "gridItem" (dict "imageName" "12L.jpg" "gridWidth" "2 " ) }}
+					<!-- {{ partial "picture" (dict "imageName" "14L.jpg" "gridWidth" "3 " ) }}
+					{{ partial "picture" (dict "imageName" "15L.jpg" "gridWidth" "1 " ) }} -->
+					{{ partial "gridItem" (dict "imageName" "17L.jpg" "gridWidth" "1 " ) }}
+					{{ partial "gridItem" (dict "imageName" "16L.jpg" "gridWidth" "3 " ) }}
+					<!-- {{ partial "picture" (dict "imageName" "18L.jpg" "gridWidth" "1 " ) }} -->
+					{{ partial "gridItem" (dict "imageName" "19L.jpg" "gridWidth" "2 " ) }}
+					{{ partial "gridItem" (dict "imageName" "20L.jpg" "gridWidth" "2 " ) }}
+					<!-- {{ partial "picture" (dict "imageName" "21L.jpg" "gridWidth" "1 " ) }} -->
+					{{ partial "gridItem" (dict "imageName" "22L.jpg" "gridWidth" "2 " ) }}
+
+					{{ partial "gridItem" (dict "imageName" "23L.jpg" "gridWidth" "1 " ) }}
+					{{ partial "gridItem" (dict "imageName" "24L.jpg" "gridWidth" "3 " ) }}
+					{{ partial "gridItem" (dict "imageName" "25L.jpg" "gridWidth" "2 " ) }}
+					{{ partial "gridItem" (dict "imageName" "26L.jpg" "gridWidth" "3 " ) }}
+					<!-- {{ partial "picture" (dict "imageName" "27L.jpg" "gridWidth" "1 " ) }} -->
+					{{ partial "gridItem" (dict "imageName" "28L.jpg" "gridWidth" "2 " ) }}
+					{{ partial "gridItem" (dict "imageName" "29L.jpg" "gridWidth" "1 " ) }}
+					{{ partial "gridItem" (dict "imageName" "30L.jpg" "gridWidth" "1 " ) }}
+					<!-- {{ partial "picture" (dict "imageName" "31L.jpg" "gridWidth" "2 " ) }} -->
+					{{ partial "gridItem" (dict "imageName" "32L.jpg" "gridWidth" "3 " ) }}
+
+			</div>
+		</div>
+	</section>
+
+
+	{{partial "footer.html" .}}
