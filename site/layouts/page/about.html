@@ -1,23 +1,25 @@
-{{ partial "header.html" .}}
-
-{{ partial "nav.html" .}}
+{{ partial "header.html" .}} {{ partial "nav.html" .}}
 
 <div class="main" id="fullpage">
 
 	{{ partial "slide_head" (dict "imageName" "milan_sm.jpg" "title" "about us" ) }}
 
 	<section class="section slide-with-text-only">
+		<div class="row v-center">
+
 			<div class="container">
-				<div class="row v-center">
-					<div class="col span-6">
-The project was born in Milan by fellows, friends and brothers, who until then had travelled on parallel paths that were never intended to cross. Gilberto from law school, Gianluca from medicine, and Federico from design had a common passion for accessories that share a rare mix of qualities: unpretentious design, rich character and strong identity, so they decided to escape consumer labels and create something from scratch.
-<br>By merging Gilberto’ s compulsion for challenges, Gianluca’ s care for technique, and Federico’ s creative foundations, Pottwal retraces the secular groove made famous by Italian craftsmen. This legacy has been injected into a contemporary container with materials from both past and present, strong and overcast colors, with simplified but lively forms that do not succumb to the daily drama of forced anonymity creating sophisticated contrast and combinations to be experienced by all five senses.					
-					</div>
+				<div class="col span-6 mobile-12">
+					The project was born in Milan by fellows, friends and brothers, who until then had travelled on parallel paths that were never intended to cross. Gilberto from law school, Gianluca from medicine, and Federico from design had a common passion for accessories
+					that share a rare mix of qualities: unpretentious design, rich character and strong identity, so they decided to escape consumer labels and create something from scratch.
+					<br>By merging Gilberto’ s compulsion for challenges, Gianluca’ s care for technique, and Federico’ s creative foundations, Pottwal retraces the secular groove made famous by Italian craftsmen. This legacy has been injected into a contemporary container
+					with materials from both past and present, strong and overcast colors, with simplified but lively forms that do not succumb to the daily drama of forced anonymity creating sophisticated contrast and combinations to be experienced by all five senses.
 				</div>
 			</div>
+		</div>
+
 	</section>
 
 
 
 
-{{partial "footer.html" .}}
+	{{partial "footer.html" .}}
